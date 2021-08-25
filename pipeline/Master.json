@@ -35,7 +35,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://prod-19.northcentralus.logic.azure.com:443/workflows/af18dc39bdb348f6b514c14e5782af9d/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=QBHHSrOvaVO_FOBPS0zMAGSA0kAIO9HCk63QZt37aJc",
+					"url": "https://prod-02.northcentralus.logic.azure.com:443/workflows/bd8d4764553d4fa8b251b61dfa7640e1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=aaEVX-AN1wviObMGSX1TwjUVJijXbVr6JXwRkC5mnhE",
 					"method": "POST",
 					"body": {
 						"value": "{\n    \"title\": \"@{activity('Execute Pipeline1').output.pipelineName} SUCCEEDED!\",\n    \"message\": \"Pipeline run finished successfully!\",\n    \"color\": \"Green\",\n    \"dataFactoryName\": \"@{pipeline().DataFactory}\",\n    \"pipelineName\": \"@{activity('Execute Pipeline1').output.pipelineName}\",\n    \"pipelineRunId\": \"@{activity('Execute Pipeline1').output.pipelineRunId}\",\n    \"time\": \"@{utcnow()}\"\n}",
